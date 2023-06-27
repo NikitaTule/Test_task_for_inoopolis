@@ -46,7 +46,7 @@ def test_password(password, email):
     assert check_special_characters(password) is True, print('Пароль должен содержать хотя '
                                                              'бы один специальный символ из перечисленных: !, @, #, $')
     assert check_password(email, password) is True, print('Пароль не должен содержать подстроку,'
-                                                          ' совпадающую с частью имени ')
+                                                          ' совпадающую с частью эмейла ')
 
 
-test_password('пароль', 'логин')
+test_password('aawWs!@w#__3defe', 'aawW2s!')
